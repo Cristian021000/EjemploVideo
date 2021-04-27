@@ -29,7 +29,7 @@ namespace EjemploVideo
                         nombre = Console.ReadLine();
                         Console.WriteLine("Ingrese su apellido: ");
                         apellido = Console.ReadLine();
-                        Console.WriteLine("Ingrese su sexo: ");
+                        Console.WriteLine("Ingrese su sexo: ");  //COMENTARIO DE MODIFICACIÓN (ANTONIO)
                         sexo = Console.ReadLine();
                         Console.WriteLine("Ingrese su Dni: ");
                         dni = Console.ReadLine();
