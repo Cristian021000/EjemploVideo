@@ -68,6 +68,7 @@ namespace EjemploVideo
             Console.WriteLine("Su sexo es: " + sexo);
             Console.WriteLine("Su edad es: " + edad);
             Console.WriteLine("Su Dni es : " + dni);
+            Console.WriteLine("Gracias por formar parte de este proyecto.");
         }
 
     }
