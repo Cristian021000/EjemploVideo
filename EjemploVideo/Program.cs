@@ -12,7 +12,8 @@ namespace EjemploVideo
         {
             int op, edad = 0;
             char rpta;
-            String nombre = "", apellido = "", sexo = "";
+            //Ariel agrego Dni
+            String nombre = "", apellido = "", sexo = "" , dni="" ;
             do
             {
                 Menu();
@@ -30,6 +31,8 @@ namespace EjemploVideo
                         apellido = Console.ReadLine();
                         Console.WriteLine("Ingrese su sexo: ");
                         sexo = Console.ReadLine();
+                        Console.WriteLine("Ingrese su Dni: ");
+                        dni = Console.ReadLine();
                         do
                         {
                             Console.WriteLine("Ingrese su edad: ");
@@ -41,7 +44,7 @@ namespace EjemploVideo
                         {
                             Console.WriteLine("No hay datos para mostrar. ");
                         }else
-                        MostrarDatos(nombre, apellido, sexo, edad); break;
+                        MostrarDatos(nombre, apellido, sexo, edad,dni); break;
                     case 3: return; 
                 }
                 Console.WriteLine("Desea ingresar una nueva opción?: ");
@@ -58,13 +61,13 @@ namespace EjemploVideo
             Console.WriteLine("3. Salir");
         }
 
-        private static void MostrarDatos(string nombre, string apellido, string sexo, int edad)
+        private static void MostrarDatos(string nombre, string apellido, string sexo, int edad,string dni)
         {
             Console.WriteLine("Su nombre es: " + nombre);
             Console.WriteLine("Su apellido es: " + apellido);
             Console.WriteLine("Su sexo es: " + sexo);
             Console.WriteLine("Su edad es: " + edad);
-
+            Console.WriteLine("Su Dni es : " + dni);
         }
 
     }
