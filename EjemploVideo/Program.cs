@@ -10,7 +10,9 @@ namespace EjemploVideo
     {
         static void Main(string[] args)
         {
-            int op, edad = 0;
+            int op = 0; 
+            int edad = 0;
+            int NumCelular = 0;
             char rpta;
             //Ariel agrego Dni
             String nombre = "", apellido = "", sexo = "" , dni="" ;
@@ -33,6 +35,8 @@ namespace EjemploVideo
                         sexo = Console.ReadLine();
                         Console.WriteLine("Ingrese su Dni: ");
                         dni = Console.ReadLine();
+                        Console.WriteLine("Ingrese su número de celular: ");
+                        NumCelular = int.Parse(Console.ReadLine());
                         do
                         {
                             Console.WriteLine("Ingrese su edad: ");
@@ -44,7 +48,7 @@ namespace EjemploVideo
                         {
                             Console.WriteLine("No hay datos para mostrar. ");
                         }else
-                        MostrarDatos(nombre, apellido, sexo, edad,dni); break;
+                        MostrarDatos(nombre, apellido, sexo, edad,dni,NumCelular); break;
                     case 3: return; 
                 }
                 Console.WriteLine("Desea ingresar una nueva opción?: ");
@@ -61,12 +65,13 @@ namespace EjemploVideo
             Console.WriteLine("3. Salir");
         }
 
-        private static void MostrarDatos(string nombre, string apellido, string sexo, int edad,string dni)
+        private static void MostrarDatos(string nombre, string apellido, string sexo, int edad,string dni, int NumCelular)
         {
             Console.WriteLine("Su nombre es: " + nombre);
             Console.WriteLine("Su apellido es: " + apellido);
             Console.WriteLine("Su sexo es: " + sexo);
             Console.WriteLine("Su edad es: " + edad);
+            Console.WriteLine("Su número de celular es: " + NumCelular);
             Console.WriteLine("Su Dni es : " + dni);
             Console.WriteLine("Gracias por formar parte de este proyecto.");
         }
